@@ -10,6 +10,7 @@ RUN set -ex && \
 
 USER = jupyter
 ENV USER = jupyter
+ENV HOME = /tmp
 WORKDIR /tmp
 EXPOSE 8888
 
