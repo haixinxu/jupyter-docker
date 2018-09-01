@@ -5,8 +5,8 @@ RUN set -ex && \
     apt-get update && \ 
     apt-get install ca-certificates python3-pip -y&& \
     pip3 install --upgrade pip && \
-    pip3 install jupyter && \
-    pip3 install jupyterlab
+    python3 -m pip install jupyter && \
+    python3 -m pip install jupyterlab
 
 USER = jupyter
 ENV USER = jupyter
